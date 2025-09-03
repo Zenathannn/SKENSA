@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F5ECE0;
+            color: #0E2148;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h2 {
+            background-color: #483AA0;
+            color: white;
+            padding: 15px;
+            border-radius: 12px 12px 0 0;
+            margin: 0;
+            width: 360px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 0 0 12px 12px;
+            width: 350px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        table td {
+            padding: 8px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #7965C1;
+            border-radius: 6px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #483AA0;
+            box-shadow: 0 0 5px #7965C1;
+        }
+
+        input[type="submit"] {
+            background-color: #7965C1;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #52357B;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        p a {
+            text-decoration: none;
+            color: #483AA0;
+            background-color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        p a:hover {
+            background-color: #52357B;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Registrasi Admin</h2>
+        <form action="registrasi.php" method="post">
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="DAFTAR">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p><a href="session_login.html">Kembali Ke Login</a></p>
+    </div>
+</body>
+</html>

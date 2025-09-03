@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu</title>
+    <link rel="stylesheet" href="buku_tamu.css">
+</head>
+<body>
+    <header>
+        <img src="logo_skensa.png" alt="">
+        <p>SMK Negri 1 Pasuruan</p>
+        <h1>REKAYASA PERANGKAT LUNAK</h1>
+        <h3>Selamat Datang</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Beranda</a></li>
+            <li><a href="biodata.html">Biodata</a></li>
+            <li><a href="daftar.html">Buku Tamu</a></li>
+        </ul>
+    </nav>
+    <main>        
+        <h2>BUKU TAMU</h2>
+        <form action="simpan.php" method="post">
+            <fieldset>
+                <legend>FORMULIR     BUKU TAMU</legend>
+                <label for="nama">Nama Lengkap :</label>
+                <input type="text" name="nama_tamu" required>
+
+                <label for="alamat">Alamat :</label>
+                <textarea id="alamat" rows="3" name="alamat_tamu" required></textarea>
+
+                <label for="telepon">Nomor Telepon :</label>
+                <input type="tel" name="notelp_tamu" required>
+
+                <label for="pesan">Pesan Tambahan :</label>
+                <textarea name="pesan_tamu" rows="3"></textarea>
+
+                <button type="submit">Kirim</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p><a href="https://smkn1-pasuruan.sch.id/">WEBSITE SEKOLAH</a></p>
+        <p><a href="https://skensa-rpl.com/berita">WEBSITE JURUSAN</a></p>
+        <p>&copy; SMK Negri 1 Pasuruan. All rights reserved</p>  
+    </footer>
+</body>
+</html>

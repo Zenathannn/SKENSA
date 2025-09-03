@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F5ECE0;
+            color: #0E2148;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #483AA0;
+            color: white;
+            padding: 15px;
+            border-radius: 12px 12px 0 0;
+            margin: 0;
+            width: 360px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        h1 hr {
+            border: none;
+            border-top: 2px solid #7965C1;
+            margin-top: 8px;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 0 0 12px 12px;
+            width: 350px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        table td {
+            padding: 6px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input:not([type]) {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #7965C1;
+            border-radius: 6px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input:not([type]):focus {
+            border-color: #483AA0;
+            box-shadow: 0 0 5px #7965C1;
+        }
+
+        input[type="submit"] {
+            background-color: #7965C1;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #52357B;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        h2 a {
+            text-decoration: none;
+            color: #483AA0;
+            background-color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        h2 a:hover {
+            background-color: #52357B;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FORM LOGIN<hr></h1>
+        <form action="session_login.php" method="post">
+            <table>
+                <tr><td>Username</td><td><input name="username" type="text" size="10"></td></tr>
+                <tr><td>Password</td><td><input type="password" name="password" size="10"></td></tr>
+            </table>
+            <input type="submit" value="LOGIN">
+        </form>
+        <h2><a href="session_registrasi.html">DAFTAR AKUN</a></h2>
+    </div>
+</body>
+</html>
